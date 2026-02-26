@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>የወንጌል ብርሃን - መንፈሳዊ ትምህርት</title>
+    
+    <style>
+        :root {
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --text-main: #2d3436;
+            --primary: #0984e3;
+            --accent: #d63031;
+            --header-grad: linear-gradient(135deg, #6c5ce7, #0984e3);
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --text-main: #dfe6e9;
+            --primary: #74b9ff;
+            --header-grad: linear-gradient(135deg, #2d3436, #000000);
+        }
+
+        * { box-sizing: border-box; transition: all 0.3s ease; }
+
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0; padding: 0; line-height: 1.6;
+        }
+
+        header {
+            background: var(--header-grad);
+            color: white; padding: 25px 15px;
+            text-align: center; position: sticky; top: 0; z-index: 1000;
+        }
+
+        .mode-btn {
+            background: white; border: none; padding: 8px 15px;
+            border-radius: 20px; font-weight: bold; cursor: pointer; margin-top: 10px;
+        }
+
+        .container { max-width: 500px; margin: 15px auto; padding: 10px; }
+
+        .topic-card {
+            background: var(--card-bg); border-radius: 15px;
+            padding: 20px; margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-left: 6px solid var(--primary);
+        }
+
+        /* የቀለም ልዩነት ለርዕሶቹ */
+        .topic-card:nth-child(1) { border-left-color: #ff7675; }
+        .topic-card:nth-child(2) { border-left-color: #55efc4; }
+        .topic-card:nth-child(3) { border-left-color: #ffeaa7; }
+        .topic-card:nth-child(4) { border-left-color: #a29bfe; }
+        .topic-card:nth-child(5) { border-left-color: #81ecec; }
+
+        h2 { font-size: 1.2rem; color: var(--primary); margin-top: 0; }
+
+        blockquote {
+            background: rgba(9, 132, 227, 0.08);
+            border-right: 4px solid var(--primary);
+            margin: 15px 0; padding: 12px; font-style: italic;
+        }
+
+        .media-links { display: flex; flex-direction: column; gap: 10px; margin-top: 15px; }
+
+        .yt-link {
+            text-decoration: none; background: #c0392b; color: white;
+            padding: 12px; border-radius: 10px; text-align: center;
+            font-weight: bold; font-size: 0.9rem;
+        }
+
+        .yt-link:nth-child(even) { background: #2980b9; }
+
+        footer {
+            background: #2d3436; color: #dfe6e9; padding: 30px;
+            text-align: center; margin-top: 30px;
+        }
+
+        footer a { color: #f1c40f; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🌟 የወንጌል ብርሃን</h1>
+        <p>በእግዚአብሔር ቃል የታነጸ ሕይወት</p>
+        <button id="theme-toggle" class="mode-btn">🌙 ዳርክ ሞድ</button>
+    </header>
+
+    <main class="container">
+        <article class="topic-card">
+            <h2>1. ተስፋ መቁረጥና የእግዚአብሔር ቃል</h2>
+            <p>ተስፋ የምንቆርጠው ወደ ችግራችን ስንመለከት ነው፤ ተስፋ የምናገኘው ግን ወደ ቃሉ ስንመለከት ነው።</p>
+            <blockquote>"የማስባትን አሳብ እኔ አውቃለሁ፤ የሰላም አሳብ ነው እንጂ የክፉ አይደለም።" (ኤር 29:11)</blockquote>
+            <div class="media-links">
+                <a href="https://www.youtube.com/results?search_query=ተስፋ+አለመቁረጥ+ስብከት" target="_blank" class="yt-link">🎬 ስብከት አድምጥ</a>
+                <a href="https://www.youtube.com/results?search_query=ተስፋ+መዝሙር" target="_blank" class="yt-link">🎶 መዝሙር ክፈት</a>
+            </div>
+        </article>
+
+        <article class="topic-card">
+            <h2>2. ድካም እና የእግዚአብሔር ቃል</h2>
+            <p>ድካማችን የእግዚአብሔር ኃይል የሚገለጥበት አጋጣሚ ነው።</p>
+            <blockquote>"ለደከመው ኃይልን ይሰጣል፥ ጕልበት ለሌለውም ብርታትን ይጨምራል።" (ኢሳ 40:29)</blockquote>
+            <div class="media-links">
+                <a href="https://www.youtube.com/results?search_query=ድካም+ብርታት+ስብከት" target="_blank" class="yt-link">🎤 የብርታት ትምህርት</a>
+                <a href="https://www.youtube.com/results?search_query=ኃይል+መዝሙር" target="_blank" class="yt-link">🎶 የኃይል መዝሙር</a>
+            </div>
+        </article>
+
+        <article class="topic-card">
+            <h2>3. ፍርሃት እና ድፍራት</h2>
+            <p>እግዚአብሔር ከእኛ ጋር ከሆነ ማን ይቃወመናል? ድፍረት ከእምነት ይወለዳል።</p>
+            <blockquote>"እግዚአብሔር የኃይልና የፍቅር መንፈስ እንጂ የፍርሃት መንፈስ አልሰጠንም።" (2 ጢሞ 1:7)</blockquote>
+            <div class="media-links">
+                <a href="https://www.youtube.com/results?search_query=አትፍራ+ስብከት" target="_blank" class="yt-link">🛡️ የድፍረት ስብከት</a>
+                <a href="https://www.youtube.com/results?search_query=አልፈራም+መዝሙር" target="_blank" class="yt-link">🎶 የድፍረት መዝሙር</a>
+            </div>
+        </article>
+
+        <article class="topic-card">
+            <h2>4. የመከራ ብዛት እና ክብር</h2>
+            <p>መከራ ጊዜያዊ ነው፤ የሚጠብቀን ክብር ግን ዘላለማዊ ነው።</p>
+            <blockquote>"የአሁኑ ዘመን መከራ ሊገለጥ ካለው ክብር ጋር አይነጻጸርም።" (ሮሜ 8:18)</blockquote>
+            <div class="media-links">
+                <a href="https://www.youtube.com/results?search_query=መከራና+ክብር+ስብከት" target="_blank" class="yt-link">👑 የመከራና የክብር ትምህርት</a>
+                <a href="https://www.youtube.com/results?search_query=ጽናት+መዝሙር" target="_blank" class="yt-link">🎶 የጽናት መዝሙር</a>
+            </div>
+        </article>
+
+        <article class="topic-card">
+            <h2>5. የእግዚአብሔር ጸጋ እና የራስ ችሎታ</h2>
+            <p>በገዛ ችሎታችን ሳይሆን በጸጋው መቆም ትልቁ ድል ነው።</p>
+            <blockquote>"ጸጋዬ ይበቃሃል፥ ኃይሌ በድካም ይፈጸማልና።" (2 ቆሮ 12:9)</blockquote>
+            <div class="media-links">
+                <a href="https://www.youtube.com/results?search_query=የእግዚአብሔር+ጸጋ+ስብከት" target="_blank" class="yt-link">✨ ስለ ጸጋ የተሰበከ</a>
+                <a href="https://www.youtube.com/results?search_query=ጸጋው+መዝሙር" target="_blank" class="yt-link">🎶 የጸጋ መዝሙር</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>ለተጨማሪ መረጃ: <a href="mailto:amsalutadewos@gmail.com">amsalutadewos@gmail.com</a></p>
+        <p>© 2026 የወንጌል ብርሃን</p>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        themeToggle.addEventListener('click', () => {
+            if (body.hasAttribute('data-theme')) {
+                body.removeAttribute('data-theme');
+                themeToggle.innerHTML = "🌙 ዳርክ ሞድ";
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                themeToggle.innerHTML = "☀️ ላይት ሞድ";
+            }
+        });
+
+        // የንክኪ ስሜት ለሊንኮች
+        document.querySelectorAll('.yt-link').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navigator.vibrate) navigator.vibrate(50);
+            });
+        });
+    </script>
+</body>
+</html>
